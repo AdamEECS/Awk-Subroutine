@@ -17,4 +17,8 @@ public:
 class IntSetArray {
 private:
     int n, *x;
+public:
+    IntSetArray() {
+        
+    }
 };
