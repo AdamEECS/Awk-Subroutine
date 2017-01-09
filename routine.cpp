@@ -18,7 +18,9 @@ class IntSetArray {
 private:
     int n, *x;
 public:
-    IntSetArray() {
-        
+    IntSetArray(int maxelms, int maxval)
+    {   x = new int[1 + maxelms];
+        n = 0;
+        x[0] = maxval;
     }
 };
