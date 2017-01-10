@@ -13,7 +13,7 @@ function select(k, l, u, i, t, m) {
         # bugs: n**2 time if x[1]=...=x[n]
     l = 1; u = n
     while (l < u) {
-        # x[1..1-l] <= x[1..u] <= x[u+1..n]
+        # x[1..l-1] <= x[1..u] <= x[u+1..n]
         swap(l, randint(l, u))
         t = x[l]
         m = l
