@@ -18,7 +18,7 @@ function select(k, l, u, i, t, m) {
         t = x[l]
         m = l
         for (i = l+1; i <= u; i++) {
-            # x[l+1..m] < t and x[m+1..i-1] >= t
+            # x[l+1..m] < t and t <= x[m+1..i-1]
             if (x[i] < t) swap(++m, i)
         }
         swap(l, m)
