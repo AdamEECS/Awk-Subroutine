@@ -4,7 +4,7 @@ function swap(i, j, t) { # x[i] :=: x[j]
     t = x[i]; x[i] = x[j]; x[j] = t
 }
 
-function randint(l, u) { # rand int in l..u
+function randInt(l, u) { # rand int in l..u
     return l + int((u - l + 1) * rand())
 }
 
@@ -14,7 +14,7 @@ function select(k, l, u, i, t, m) {
     l = 1; u = n
     while (l < u) {
         # x[1..l-1] <= x[1..u] <= x[u+1..n]
-        swap(l, randint(l, u))
+        swap(l, randInt(l, u))
         t = x[l]
         m = l
         for (i = l+1; i <= u; i++) {
