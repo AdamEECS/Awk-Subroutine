@@ -39,3 +39,14 @@ public:
             v[i] = x[i];
     }
 };
+
+class IntSetList {
+private:
+    int n;
+    struct node {
+        int val;
+        node *next;
+        node(int v, node *p) { val = v; next = p; }
+    };
+    node *head, *sentinel;
+};
