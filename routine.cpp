@@ -49,4 +49,14 @@ private:
         node(int v, node *p) { val = v; next = p; }
     };
     node *head, *sentinel;
+    node *rinsert(node *p, int t)
+    {
+        if (p->val < t) {
+            p->next = rinsert(p->next, t);
+        } else if (p->val > t) {
+            p = new node(t, p);
+            n++;
+        }
+        return p;
+    }
 };
