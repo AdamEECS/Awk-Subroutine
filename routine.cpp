@@ -1,4 +1,4 @@
-class IntSetStl {
+class IntSetSTL {
 private:
     set<int> S;
 public:
