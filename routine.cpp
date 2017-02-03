@@ -60,7 +60,7 @@ private:
         }
         return p;
     }
-    
+
 public:
     IntSetList(int maxelms, int maxval)
     {   sentinel = head = new node(maxval, 0);
@@ -76,4 +76,9 @@ public:
             v[j++] = p->val;
         }
     }
+};
+
+
+class IntSet {
+
 };
