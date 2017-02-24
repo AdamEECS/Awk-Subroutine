@@ -14,7 +14,6 @@ public:
     }
 };
 
-
 class IntSetArray {
 private:
     int n, *x;
@@ -40,7 +39,6 @@ public:
             v[i] = x[i];
     }
 };
-
 
 class IntSetList {
 private:
