@@ -84,4 +84,6 @@ private:
         node *left, *right;
         node(int v) { val = v; left = right = 0; }
     };
-}
+    node *root;
+    node *rinsert(node *p, int t)
+};
