@@ -86,4 +86,15 @@ private:
     };
     node *root;
     node *rinsert(node *p, int t)
+    {
+        if(p == 0) {
+            p = new node(t)
+            n++;
+        } else if (t < p->val) {
+            p->left = rinsert(p->left, t);
+        } else if (t > p->val) {
+            p->right = rinsert(p->right, t);
+        } // do nothing if p->val == t
+        return p;
+    }
 };
