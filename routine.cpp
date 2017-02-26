@@ -75,3 +75,13 @@ public:
         }
     }
 };
+
+class IntSetBST {
+private:
+    int n, *v, vn;
+    struct node {
+        int val;
+        node *left, *right;
+        node(int v) { val = v; left = right = 0; }
+    };
+}
