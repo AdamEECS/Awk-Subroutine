@@ -97,5 +97,4 @@ private:
         } // do nothing if p->val == t
         return p;
     }
-    
 };
